@@ -1,0 +1,39 @@
+.breadcrumbs {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 30px;
+}
+
+.breadcrumbs__item {
+  &:not(:last-child) {
+    position: relative;
+    margin-right: 20px;
+
+    &::after {
+      position: absolute;
+      content: "/";
+      right: -10px;
+    }
+  }
+
+  &--active {
+    background: rgb(239, 243, 245);
+    opacity: 0.8;
+    border-radius: 20px;
+  }
+}
+
+.breadcrumbs__link {
+  padding: 0 8px;
+  font-weight: 300;
+  color: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  vertical-align: middle;
+  text-align: center;
+
+  &--active {
+    color: rgb(110, 16, 94);
+  }
+}

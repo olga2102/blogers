@@ -1,0 +1,40 @@
+.header {
+  padding: 10px 4.7%;
+  margin-bottom: 30px;
+
+  @media (max-width: $tablet-width) {
+    padding: 10px 0;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header__logo {
+  @media (max-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
+  }
+}
+
+.header__toggle {
+  @media (max-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: auto;
+  }
+}
+
+.header__main-nav {
+  margin-left: auto;
+  width: 69%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.social {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.social__link {
+  fill: $light;
+}
+
+.social__link:hover .social__picture {
+  fill: black;
+  cursor: url("../img/all-pages/cursor-hover.png"), auto;
+}

@@ -1,0 +1,19 @@
+.page {
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: start;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: $dark-pink;
+  cursor: url("../img/all-pages/cursor.svg"), auto;
+}
