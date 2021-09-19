@@ -15,7 +15,7 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo logo">
+      <a class="header__logo logo" href="index.html">
         <picture>
           <img class="logo__picture" src="img/all-pages/logo.png" width="98" height="98"
             alt="Логотип рекламного агентства">
@@ -47,7 +47,6 @@
         </ul>
         <button class="header__button lang">en / ru</button>
       </nav>
-
     </div>
   </header>
   <main>
@@ -56,38 +55,107 @@
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Главная</a>
         </li>
+        <li class="breadcrumbs__item breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link">Блогеры</a>
+        </li>
         <li class="breadcrumbs__item breadcrumbs__item--active">
-          <a class="breadcrumbs__link breadcrumbs__link--active">Блогеры</a>
+          <a class="breadcrumbs__link breadcrumbs__link--active">Максим Максимов</a>
         </li>
       </ul>
     </div>
-      <section class="blogers">
-        <div class="container">
-        <h1 class="blogers__title">Блогеры</h1>
-        <form class="blogers__form form">
-          <legend class="form__legend">Сортировать по:</legend>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="place" aria-label="выберете площадку">
-              <select class="form__select" id="place" name="type">
-                <option value="choise" selected>выберете площадку</option>
-                <option value="youtube">Youtube</option>
-                <option value="instagram">Instagram</option>
-                <option value="TikTok">TikTok</option>
-              </select>
-            </label>
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="place" aria-label="выберете направление">
-              <select class="form__select" id="place" name="type">
-                <option value="select" selected>выберете направление</option>
-                <option value="travel">Путешествия</option>
-                <option value="fashion">Мода</option>
-                <option value="mucis">Музыка</option>
-              </select>
-            </label>
-          </fieldset>
-        </form>
-        <ul class="blogers__list">
+    <section class="info container">
+      <h2 class="visually-hidden">Информация о блогере Максим Максимов</h2>
+      <div class="info__wrapper">
+        <picture>
+          <img class="info__img" src="img/bloger/girl-main.jpg" srcset="img/bloger/girl-main@2x.jpg" width="409"
+            height="570" alt="Фото девушки с короткими темно-русыми волосами и серыми глазами">
+        </picture>
+        <div class="info__card card">
+          <h3 class="card__title">Максим Максимов</h3>
+          <div class="card__wrapper">
+            <div class="card__inner">
+              <img class="card__icon" src="img/bloger/youtube-bloger.svg" width="64" height="64" alt="Лого Ютуб">
+              <p class="card__text"><span>3 160 000+</span><br>Подписчиков</p>
+            </div>
+            <div class="card__inner">
+              <img class="card__icon" src="img/bloger/vk-bloger.svg" width="64" height="64" alt="Лого Вконтакте">
+              <p class="card__text"><span>134 000+</span><br>Подписчиков</p>
+            </div>
+            <div class="card__inner">
+              <img class="card__icon" src="img/bloger/insta-bloger.svg" width="64" height="64"  alt="Лого Инстаграм">
+              <p class="card__text"><span>128 000+</span><br>Подписчиков</p>
+            </div>
+          </div>
+          <h4 class="card__subtitle">Информация о канале</h4>
+          <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus elit lobortis
+            pellentesque tellus mi nulla morbi. Risus, quis consectetur sagittis pharetra, urna, leo. Egestas porta
+            habitasse fermentum nulla neque. At eget leo sed bibendum nunc. Diam neque, eu velit urna, feugiat vulputate
+            elit justo. Lectus diam lacus vel donec sit. Vitae venenatis amet suscipit enim nec tincidunt sit lacus.
+            Morbi orci, eget vitae tortor cras at eu duis. Sit est, cursus sem facilisis sed ac hhhh h hhhhhhhh kkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk iiiiiiiiiiii ooooooooooooo ooooooooooo ooooooooooooooo
+          </p>
+        </div>
+      </div>
+
+    </section>
+    <section class="videos">
+      <div class="container">
+        <h2 class="videos__title">Последние ролики</h2>
+        <ul class="videos__list">
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/bottle.jpg" srcset="img/bloger/bottle@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение бутылки и цветка">
+              </picture>
+            </a>
+          </li>
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/branch.jpg" srcset="img/bloger/branch@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение леса">
+              </picture>
+            </a>
+          </li>
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/mountain.jpg" srcset="img/bloger/mountain@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение гор">
+              </picture>
+            </a>
+          </li>
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/flower.jpg" srcset="img/bloger/flower@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение тюльпана">
+              </picture>
+            </a>
+          </li>
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/tree.jpg" srcset="img/bloger/tree@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение деревьев">
+              </picture>
+            </a>
+          </li>
+          <li class="videos__item">
+            <a class="videos__link" href="#">
+              <picture>
+                <img class="videos__img" src="img/bloger/fall.jpg" srcset="img/bloger/fall@2x.jpg" width="421"
+                  height="217" alt="На заставке изображение осеннего дерева">
+              </picture>
+            </a>info
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="blogers blogers--bloger">
+      <div class="container">
+        <h2 class="blogers__title">Другие блогеры</h1>
+          <ul class="blogers__list">
           <li class="blogers__item">
             <a class="blogers__link" href="#">
               <picture>
@@ -95,7 +163,7 @@
                   height="311" alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -114,11 +182,11 @@
           <li class="blogers__item">
             <a class="blogers__link" href="#">
               <picture>
-                <img class="blogers__img" src="img/index/boy.jpg" srcset="img/index/boy@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
+                <img class="blogers__img" src="img/index/boy.jpg" srcset="img/index/boy@2x.jpg" width="311" height="311"
+                  alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -137,11 +205,11 @@
           <li class="blogers__item">
             <a class="blogers__link" href="#">
               <picture>
-                <img class="blogers__img" src="img/index/sea.jpg" srcset="img/index/sea@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
+                <img class="blogers__img" src="img/index/sea.jpg" srcset="img/index/sea@2x.jpg" width="311" height="311"
+                  alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -164,7 +232,7 @@
                   height="311" alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -183,11 +251,11 @@
           <li class="blogers__item">
             <a class="blogers__link" href="#">
               <picture>
-                <img class="blogers__img" src="img/index/gym.jpg" srcset="img/index/gym@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
+                <img class="blogers__img" src="img/index/gym.jpg" srcset="img/index/gym@2x.jpg" width="311" height="311"
+                  alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -204,13 +272,13 @@
             </a>
           </li>
           <li class="blogers__item">
-            <a class="blogers__link" href="bloger.html">
+            <a class="blogers__link" href="#">
               <picture>
                 <img class="blogers__img" src="img/index/girl-face.jpg" srcset="img/index/girl-face@2x.jpg" width="311"
                   height="311" alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -233,7 +301,7 @@
                   height="311" alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -252,11 +320,11 @@
           <li class="blogers__item">
             <a class="blogers__link" href="#">
               <picture>
-                <img class="blogers__img" src="img/index/boy-shadow.jpg" srcset="img/index/boy-shadow@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
+                <img class="blogers__img" src="img/index/boy-shadow.jpg" srcset="img/index/boy-shadow@2x.jpg"
+                  width="311" height="311" alt="Фото девушки, изображенной в профиль">
               </picture>
               <div class="blogers__wrapper">
-              <h2 class="blogers__name">Макс Максимов</h2>
+                <h2 class="blogers__name">Макс Максимов</h2>
                 <div class="blogers__inner">
                   <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
                   <p class="blogers__text">3 160 000+</p>
@@ -272,61 +340,61 @@
               </div>
             </a>
           </li>
-        </ul>
-        <a class="blogers__loading" href="#">Подгружаем...</a>
-      </section>
+          </ul>
+    </section>
     </div>
   </main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-  <a class="footer__logo logo">
-    <picture>
-      <img class="logo__picture" src="img/all-pages/logo-footer.png" width="201" height="201"
-        alt="Логотип рекламного агентства">
-    </picture>
-  </a>
-  <div class="footer__contacts">
-    <h2 class="footer__title">Cвязаться с нами</h2>
-    <ul class="footer__list">
-      <li class="footer__item">
-    <a class="footer__link footer__link--mail" href="mailto:reklama@wildjam.ru">
-      reklama@wildjam.ru
-    </a>
-  </li>
-  <li class="footer__item">
-    <p class="footer__text">ул. Сущевская, д. 27, стр. 2</p>
-  </li>
-  <li class="footer__item">
-    <a class="footer__link footer__link--tel" href="tel:+74993933962">
-      +7 (499) 393-39-62
-    </a>
-  </li>
-    </ul>
-    <div class="footer__wrapper">
-      <ul class="footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://www.vk.com/top-bro"
-            aria-label="Ссылка на Вконтакте Top Bro">
-            <svg class="social__picture" width="32" height="32">
-              <use xlink:href="img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--insta" href="https://www.instagram.com/top-bro"
-            aria-label="Ссылка на инстаграм Top Bro">
-            <svg class="social__picture" width="32" height="32">
-              <use xlink:href="img/sprite.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        </ul>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo logo" href="index.html">
+          <picture>
+            <img class="logo__picture" src="img/all-pages/logo-footer.png" width="201" height="201"
+              alt="Логотип рекламного агентства">
+          </picture>
+        </a>
+        <div class="footer__contacts">
+          <h2 class="footer__title">Cвязаться с нами</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link footer__link--mail" href="mailto:reklama@wildjam.ru">
+                reklama@wildjam.ru
+              </a>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">ул. Сущевская, д. 27, стр. 2</p>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link footer__link--tel" href="tel:+74993933962">
+                +7 (499) 393-39-62
+              </a>
+            </li>
+          </ul>
+          <div class="footer__wrapper">
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link social__link--vk" href="https://www.vk.com/top-bro"
+                  aria-label="Ссылка на Вконтакте Top Bro">
+                  <svg class="social__picture" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#vkontakte"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="https://www.instagram.com/top-bro"
+                  aria-label="Ссылка на инстаграм Top Bro">
+                  <svg class="social__picture" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-</footer>
-<script src="js/script.js"></script>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

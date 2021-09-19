@@ -1,0 +1,16 @@
+.info {
+  margin-bottom: 80px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.info__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 5px;
+  border: 1px solid rgb(239, 243, 245);
+  background: rgba(255, 255, 255, 0.25);
+}

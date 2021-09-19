@@ -1,6 +1,5 @@
 .blogers {
-  position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 
   &::before,
   &::after {
@@ -22,6 +21,11 @@
 
   &::after {
     right: 0;
+  }
+
+  &--bloger::before,
+  &--bloger::after {
+    display: none;
   }
 }
 
