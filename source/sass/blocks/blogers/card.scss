@@ -3,6 +3,10 @@
   padding: 12px 40px 10px;
   width: 68.4%;
   background: rgba(255, 255, 255, 0.25);
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .card__wrapper {
@@ -12,6 +16,11 @@
   padding-bottom: 30px;
   margin-bottom: 30px;
   border-bottom: 1px solid $light;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .card__inner {
@@ -20,8 +29,13 @@
   justify-content: space-between;
 
   &:not(:last-child) {
-    margin-right: 58px;
+    margin-right: 61px;
     margin-bottom: 40px;
+
+    @media (max-width: $mobile-width) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -37,6 +51,13 @@
   line-height: 61px;
   color: $light;
   border-bottom: 1px solid $light;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 0 15px 0;
+    margin: 0 0 20px;
+    font-size: 30px;
+    line-height: 31px;
+  }
 }
 
 .card__text {
@@ -49,6 +70,11 @@
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .card__subtitle {

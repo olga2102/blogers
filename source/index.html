@@ -21,8 +21,8 @@
             alt="Логотип рекламного агентства">
         </picture>
       </a>
-      <button class="header__toggle toggle toggle--close" type="button" aria-label="Переключение меню"></button>
-      <nav class="header__main-nav main-nav">
+      <button class="header__toggle toggle" type="button" aria-label="Переключение меню"></button>
+      <nav class="header__main-nav main-nav main-nav--opened">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
@@ -65,7 +65,7 @@
         <div class="container">
         <h1 class="blogers__title">Блогеры</h1>
         <form class="blogers__form form">
-          <legend class="form__legend">Сортировать по:</legend>
+          <h2 class="form__legend">Сортировать по:</h2>
           <fieldset class="form__fieldset">
             <label class="form__label" for="place" aria-label="выберете площадку">
               <select class="form__select" id="place" name="type">
@@ -77,8 +77,8 @@
             </label>
           </fieldset>
           <fieldset class="form__fieldset">
-            <label class="form__label" for="place" aria-label="выберете направление">
-              <select class="form__select" id="place" name="type">
+            <label class="form__label" for="type" aria-label="выберете направление">
+              <select class="form__select" id="type" name="type">
                 <option value="select" selected>выберете направление</option>
                 <option value="travel">Путешествия</option>
                 <option value="fashion">Мода</option>
@@ -274,8 +274,8 @@
           </li>
         </ul>
         <a class="blogers__loading" href="#">Подгружаем...</a>
+      </div>
       </section>
-    </div>
   </main>
 <footer class="footer">
   <div class="container">

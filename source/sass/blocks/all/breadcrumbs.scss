@@ -36,4 +36,9 @@
   &--active {
     color: rgb(110, 16, 94);
   }
+
+  &:hover {
+    color: black;
+    cursor: url("../img/all-pages/cursor-hover.svg"), auto;
+  }
 }

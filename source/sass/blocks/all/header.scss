@@ -14,6 +14,10 @@
 }
 
 .header__logo {
+  &:hover {
+    cursor: url("../img/all-pages/cursor-hover.svg"), auto;
+  }
+
   @media (max-width: $tablet-width) {
     padding: 0 40px;
   }

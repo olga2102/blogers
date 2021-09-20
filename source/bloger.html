@@ -10,6 +10,7 @@
   <link href="fonts/montserrat.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratbold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/montserratmedium.woff2" as="font" rel="preload" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body class="page__body">
@@ -21,8 +22,8 @@
             alt="Логотип рекламного агентства">
         </picture>
       </a>
-      <button class="header__toggle toggle toggle--close" type="button" aria-label="Переключение меню"></button>
-      <nav class="header__main-nav main-nav">
+      <button class="header__toggle toggle" type="button" aria-label="Переключение меню"></button>
+      <nav class="header__main-nav main-nav main-nav--opened">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">
@@ -82,7 +83,7 @@
               <p class="card__text"><span>134 000+</span><br>Подписчиков</p>
             </div>
             <div class="card__inner">
-              <img class="card__icon" src="img/bloger/insta-bloger.svg" width="64" height="64"  alt="Лого Инстаграм">
+              <img class="card__icon" src="img/bloger/insta-bloger.svg" width="64" height="64" alt="Лого Инстаграм">
               <p class="card__text"><span>128 000+</span><br>Подписчиков</p>
             </div>
           </div>
@@ -91,7 +92,9 @@
             pellentesque tellus mi nulla morbi. Risus, quis consectetur sagittis pharetra, urna, leo. Egestas porta
             habitasse fermentum nulla neque. At eget leo sed bibendum nunc. Diam neque, eu velit urna, feugiat vulputate
             elit justo. Lectus diam lacus vel donec sit. Vitae venenatis amet suscipit enim nec tincidunt sit lacus.
-            Morbi orci, eget vitae tortor cras at eu duis. Sit est, cursus sem facilisis sed ac hhhh h hhhhhhhh kkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk iiiiiiiiiiii ooooooooooooo ooooooooooo ooooooooooooooo
+            Morbi orci, eget vitae tortor cras at eu duis. Sit est, cursus sem facilisis sed ac hhhh h hhhhhhhh
+            kkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkk kkkkkkkkkkkkkk kkkkkkkkkkk kkkkkkkkkkkk iiiiiiiiiiii
+            ooooooooooooo ooooooooooo ooooooooooooooo
           </p>
         </div>
       </div>
@@ -147,202 +150,205 @@
                 <img class="videos__img" src="img/bloger/fall.jpg" srcset="img/bloger/fall@2x.jpg" width="421"
                   height="217" alt="На заставке изображение осеннего дерева">
               </picture>
-            </a>info
+            </a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="blogers blogers--bloger">
-      <div class="container">
-        <h2 class="blogers__title">Другие блогеры</h1>
-          <ul class="blogers__list">
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/girl.jpg" srcset="img/index/girl@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
+    <section class="container blogers blogers--gallery">
+      <h2 class="blogers__title">Другие блогеры</h2>
+        <div class="blogers__swiper swiper-container">
+          <ul class="blogers__list blogers__list--gallery swiper-wrapper">
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/girl.jpg" srcset="img/index/girl@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/boy.jpg" srcset="img/index/boy@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/sea.jpg" srcset="img/index/sea@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/boy.jpg" srcset="img/index/boy@2x.jpg" width="311" height="311"
-                  alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/boy-face.jpg" srcset="img/index/boy-face@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/gym.jpg" srcset="img/index/gym@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/girl-face.jpg" srcset="img/index/girl-face@2x.jpg"
+                    width="311" height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/sea.jpg" srcset="img/index/sea@2x.jpg" width="311" height="311"
-                  alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/girl-sit.jpg" srcset="img/index/girl-sit@2x.jpg" width="311"
+                    height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
+              </a>
+            </li>
+            <li class="blogers__item swiper-slide">
+              <a class="blogers__link" href="#">
+                <picture>
+                  <img class="blogers__img" src="img/index/boy-shadow.jpg" srcset="img/index/boy-shadow@2x.jpg"
+                    width="311" height="311" alt="Фото девушки, изображенной в профиль">
+                </picture>
+                <div class="blogers__wrapper">
+                  <h2 class="blogers__name">Макс Максимов</h2>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
+                    <p class="blogers__text">3 160 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
+                    <p class="blogers__text">134 000+</p>
+                  </div>
+                  <div class="blogers__inner">
+                    <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
+                    <p class="blogers__text">128 000+</p>
+                  </div>
                 </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/boy-face.jpg" srcset="img/index/boy-face@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/gym.jpg" srcset="img/index/gym@2x.jpg" width="311" height="311"
-                  alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/girl-face.jpg" srcset="img/index/girl-face@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/girl-sit.jpg" srcset="img/index/girl-sit@2x.jpg" width="311"
-                  height="311" alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="blogers__item">
-            <a class="blogers__link" href="#">
-              <picture>
-                <img class="blogers__img" src="img/index/boy-shadow.jpg" srcset="img/index/boy-shadow@2x.jpg"
-                  width="311" height="311" alt="Фото девушки, изображенной в профиль">
-              </picture>
-              <div class="blogers__wrapper">
-                <h2 class="blogers__name">Макс Максимов</h2>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/youtube.svg" width="24" height="17" alt="Лого Ютуб">
-                  <p class="blogers__text">3 160 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/vk.svg" width="24" height="17" alt="Лого Вконтакте">
-                  <p class="blogers__text">134 000+</p>
-                </div>
-                <div class="blogers__inner">
-                  <img class="blogers__icon" src="img/index/insta.svg" width="24" height="17" alt="Лого Инстаграм">
-                  <p class="blogers__text">128 000+</p>
-                </div>
-              </div>
-            </a>
-          </li>
+              </a>
+            </li>
           </ul>
+          <button class="swiper swiper--prev"></button>
+          <button class="swiper swiper--next"></button>
+          <div class="swiper-pagination"></div>
+        </div>
     </section>
-    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -394,7 +400,10 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="js/script.js"></script>
+  <script src="js/slider.js"></script> -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>

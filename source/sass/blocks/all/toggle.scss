@@ -1,5 +1,4 @@
 .toggle {
-  // display: none;
   position: relative;
 
   @media (max-width: $tablet-width) {
@@ -7,7 +6,7 @@
     justify-content: center;
     align-items: center;
     width: 25px;
-    height: 16px;
+    height: 30px;
   }
 
   &--close {
@@ -43,38 +42,7 @@
     }
   }
 
-  // &--open {
-  //   @media (max-width: $tablet-width) {
-  //     display: flex;
-
-  //     &::after {
-  //       content: "";
-  //       width: 25px;
-  //       height: 2px;
-  //       position: absolute;
-  //       top: 35%;
-  //       right: 50%;
-  //       transform: translate(50%, 0);
-  //       background-color: white;
-  //       box-shadow: 0 10px 0 0 white, 0 20px 0 0 white;
-  //     }
-  //   }
-
-  //   @media (max-width: $mobile-width) {
-  //     width: 25px;
-  //     height: 16px;
-  //     padding-bottom: 0;
-
-  //     &::after {
-  //       content: "";
-  //       width: 25px;
-  //       height: 2px;
-  //       box-shadow: 0 6px 0 0 white, 0 12px 0 0 white;
-  //     }
-  //   }
-  // }
-
   &:hover::after {
-    cursor: url("../img/all-pages/cursor-hover.png"), auto;
+    cursor: url("../img/all-pages/cursor-hover.svg"), auto;
   }
 }

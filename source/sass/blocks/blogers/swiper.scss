@@ -1,0 +1,70 @@
+.swiper-container .swiper {
+  @include button-reset;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  bottom: 0;
+  z-index: 2;
+
+  @media (max-width: $tablet-width) {
+    bottom: -7px;
+  }
+
+  &--prev {
+    left: 35%;
+  }
+
+  &--next {
+    right: 35%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-left: 1px solid $light;
+    border-bottom: 1px solid  $light;
+    top: 50%;
+    right: 50%;
+  }
+
+  &--next::before {
+    transform: translate(50%, -50%) rotate(-135deg);
+  }
+
+  &--prev::before {
+    transform: translate(50%, -50%) rotate(45deg);
+  }
+
+  &:hover {
+    cursor: url("../img/all-pages/cursor-hover.svg"), auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.swiper-horizontal .swiper ~ .swiper-pagination,
+.swiper-pagination-progressbar .swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 4%;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24%;
+  height: 2px;
+  background-color: $swiper;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.swiper ~ .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  height: 5px;
+  background-color: $swiper;
+  transform: translateX(-50%);
+}

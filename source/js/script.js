@@ -11,9 +11,8 @@ const closedMenu = () => {
 
 closedMenu();
 
-//переключение меню
 menuButton.addEventListener("click", () => {
-  if (menuButton.classList.contains('toggle--close')) { // меню закрыто
+  if (menuButton.classList.contains('toggle--close')) {
     menu.classList.toggle("main-nav--opened");
   }
 });
